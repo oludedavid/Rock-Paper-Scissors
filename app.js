@@ -108,6 +108,6 @@ const game = () => {
 
 window.addEventListener("load", () => {
   alert("Welcome!");
-  alert("Lets play a five game of Rock, Paper and Scissors!");
+  alert("Lets play a five round game of Rock, Paper and Scissors!");
   game();
 });
