@@ -105,3 +105,9 @@ const game = () => {
     playSingleRound(playerSelection, computerSelection);
   }
 };
+
+window.addEventListener("load", () => {
+  alert("Welcome!");
+  alert("Lets play a game called Rock, Paper and Scissors!");
+  game();
+});
