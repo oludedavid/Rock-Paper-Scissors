@@ -89,6 +89,18 @@ body {
   filter: contrast(10%);
 }
 
+.result {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.winner {
+  text-align: center;
+  font-weight: 30px;
+  font-size: 300;
+}
+
 .foot {
   display: flex;
   align-items: center;

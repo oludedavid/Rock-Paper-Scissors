@@ -108,11 +108,45 @@ const playSingleRound = (playerSelection, computerSelection) => {
 };
 
 rock.addEventListener("click", function () {
+  if (playerWinText.textContent == 5) {
+    const winner = document.querySelector(".winner");
+    winner.textContent = "Congratulations You Beat Computer";
+  }
+
+  if (compWinText.textContent == 5) {
+    const winner = document.querySelector(".winner");
+    winner.textContent = "Computer Wins";
+  }
   playSingleRound("rock", computerPlay());
 });
 paper.addEventListener("click", function () {
+  if (playerWinText.textContent == 5) {
+    const winner = document.querySelector(".winner");
+    winner.textContent = "Congratulations You Beat Computer";
+  }
+
+  if (compWinText.textContent == 5) {
+    const winner = document.querySelector(".winner");
+    winner.textContent = "Computer Wins";
+  }
   playSingleRound("paper", computerPlay());
 });
 scissors.addEventListener("click", function () {
+  if (playerWinText.textContent == 5) {
+    const winner = document.querySelector(".winner");
+    winner.textContent = "Congratulations You Beat Computer";
+  }
+
+  if (compWinText.textContent == 5) {
+    const winner = document.querySelector(".winner");
+    winner.textContent = "Computer Wins";
+  }
   playSingleRound("scissors", computerPlay());
+});
+reset.addEventListener("click", function () {
+  playerWinText.textContent = "";
+  compWinText.textContent = "";
+  result.textContent = "";
+  winner.textContent = "";
+  window.location.href = window.location.href;
 });
